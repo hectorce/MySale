@@ -1,0 +1,53 @@
+<%= form_for(@balanco) do |f| %>
+  <% if @balanco.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@balanco.errors.count, "error") %> prohibited this balanco from being saved:</h2>
+
+      <ul>
+      <% @balanco.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :DataEntrada %><br />
+    <%= f.date_select :DataEntrada %>
+  </div>
+  <div class="field">
+    <%= f.label :DataSaida %><br />
+    <%= f.date_select :DataSaida %>
+  </div>
+  <div class="field">
+    <%= f.label :Codigo %><br />
+    <%= f.number_field :Codigo %>
+  </div>
+  <div class="field">
+    <%= f.label :Produto %><br />
+    <%= f.text_field :Produto %>
+  </div>
+  <div class="field">
+    <%= f.label :ValorEntrada %><br />
+    <%= f.text_field :ValorEntrada %>
+  </div>
+  <div class="field">
+    <%= f.label :ValorSaida %><br />
+    <%= f.text_field :ValorSaida %>
+  </div>
+  <div class="field">
+    <%= f.label :Cliente %><br />
+    <%= f.text_field :Cliente %>
+  </div>
+  <div class="field">
+    <%= f.label :Observacao %><br />
+    <%= f.text_field :Observacao %>
+  </div>
+  <div class="field">
+    <%= f.label :troca %><br />
+    <%= f.number_field :troca %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

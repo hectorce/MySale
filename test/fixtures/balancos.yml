@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  DataEntrada: 2014-04-22
+  DataSaida: 2014-04-22
+  Codigo: 1
+  Produto: MyString
+  ValorEntrada: 1.5
+  ValorSaida: 1.5
+  Cliente: MyString
+  Observacao: MyString
+  troca: 1
+
+two:
+  DataEntrada: 2014-04-22
+  DataSaida: 2014-04-22
+  Codigo: 1
+  Produto: MyString
+  ValorEntrada: 1.5
+  ValorSaida: 1.5
+  Cliente: MyString
+  Observacao: MyString
+  troca: 1

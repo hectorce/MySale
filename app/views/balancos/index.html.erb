@@ -1,0 +1,39 @@
+<h1>Listing balancos</h1>
+
+<table>
+  <tr>
+    <th>Dataentrada</th>
+    <th>Datasaida</th>
+    <th>Codigo</th>
+    <th>Produto</th>
+    <th>Valorentrada</th>
+    <th>Valorsaida</th>
+    <th>Cliente</th>
+    <th>Observacao</th>
+    <th>Troca</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @balancos.each do |balanco| %>
+  <tr>
+    <td><%= balanco.DataEntrada %></td>
+    <td><%= balanco.DataSaida %></td>
+    <td><%= balanco.Codigo %></td>
+    <td><%= balanco.Produto %></td>
+    <td><%= balanco.ValorEntrada %></td>
+    <td><%= balanco.ValorSaida %></td>
+    <td><%= balanco.Cliente %></td>
+    <td><%= balanco.Observacao %></td>
+    <td><%= balanco.troca %></td>
+    <td><%= link_to 'Show', balanco %></td>
+    <td><%= link_to 'Edit', edit_balanco_path(balanco) %></td>
+    <td><%= link_to 'Destroy', balanco, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Balanco', new_balanco_path %>

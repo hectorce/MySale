@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Dataentrada:</b>
+  <%= @balanco.DataEntrada %>
+</p>
+
+<p>
+  <b>Datasaida:</b>
+  <%= @balanco.DataSaida %>
+</p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @balanco.Codigo %>
+</p>
+
+<p>
+  <b>Produto:</b>
+  <%= @balanco.Produto %>
+</p>
+
+<p>
+  <b>Valorentrada:</b>
+  <%= @balanco.ValorEntrada %>
+</p>
+
+<p>
+  <b>Valorsaida:</b>
+  <%= @balanco.ValorSaida %>
+</p>
+
+<p>
+  <b>Cliente:</b>
+  <%= @balanco.Cliente %>
+</p>
+
+<p>
+  <b>Observacao:</b>
+  <%= @balanco.Observacao %>
+</p>
+
+<p>
+  <b>Troca:</b>
+  <%= @balanco.troca %>
+</p>
+
+
+<%= link_to 'Edit', edit_balanco_path(@balanco) %> |
+<%= link_to 'Back', balancos_path %>
